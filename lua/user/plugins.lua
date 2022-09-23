@@ -46,6 +46,7 @@ return packer.startup(function(use)
     run = function() vim.fn["mkdp#util#install"]() end,
   })
   use {"windwp/nvim-ts-autotag"}
+  use {"p00f/nvim-ts-rainbow" }
   use {'MunifTanjim/prettier.nvim'}
   use {"github/copilot.vim"} -- copilot ai
   use { "wbthomason/packer.nvim", commit = "00ec5adef58c5ff9a07f11f45903b9dbbaa1b422" } -- Have packer manage itself
