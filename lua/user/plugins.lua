@@ -41,6 +41,10 @@ packer.init {
 -- Install your plugins here
 return packer.startup(function(use)
   -- My plugins here
+  use({
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+  })
   use {"windwp/nvim-ts-autotag"}
   use {'MunifTanjim/prettier.nvim'}
   use {"github/copilot.vim"} -- copilot ai
