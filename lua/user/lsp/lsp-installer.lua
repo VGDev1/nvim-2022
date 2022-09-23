@@ -13,6 +13,7 @@ local servers = {
   "bashls",
   "jsonls",
   "yamlls",
+  "tailwindcss"
 }
 
 lsp_installer.setup()

@@ -44,7 +44,7 @@ return packer.startup(function(use)
   use({
     "iamcco/markdown-preview.nvim",
     run = function() vim.fn["mkdp#util#install"]() end,
-  })
+})
   use {"windwp/nvim-ts-autotag"}
   use {"p00f/nvim-ts-rainbow" }
   use {'MunifTanjim/prettier.nvim'}
